@@ -12,10 +12,13 @@ console.log(chalk.green("Hello world!"));
 //!-How can you enable using the import syntax using node js
 //  update package.json to include the package
 //   "type": "module",
+// alternativly we can change the suffix to mjs (module js) every place we want to use import/export
+//,but if we want to use every place in every file it's better to just chnage to "type": "module"
 
 //!-Give 2 node.js environment variables that are not available when using the import syntax.
 // 1- __dirname
 // 2- __filename
+//if we still want to use them we can change the suffix to cjs(common js) in the specipic file we want to ,for example exaple.js-->exaple.cjs
 
 //!-Create 3 functions using the export/import syntax.
 //  update package.json to include the package
