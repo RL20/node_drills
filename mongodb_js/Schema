@@ -1,0 +1,42 @@
+Blogs collection
+
+{
+_id : ...
+Title : ...
+PostTime : ... 
+nLikes : ...
+NumComments : ...,
+Author : { 
+      UserId : ...,
+      ProfilePic : ..., 
+      Name : ....
+}
+...
+}
+Comments collection
+
+{
+ _id : ...,
+ BlogId : ... // Reference to blogs
+ PostTime : ... ,
+ Text : ... 
+  Author : { 
+      UserId : ...,
+      ProfilePic : ..., 
+      Name : ....
+}
+,
+nLikes : ...
+}
+
+Likes collection :
+
+{
+ _id : ...,
+ ReferenceId : ... // Reference to blogs or comments
+ LikeTime : ... ,
+  Author : { 
+      UserId : ...,
+      ProfilePic : ..., 
+      Name : ....
+}
